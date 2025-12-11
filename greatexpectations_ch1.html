@@ -2,64 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Great Expectations: Chapter 1 - Distinguishable Paragraphs</title>
+    <title>Great Expectations: Chapter 1 - JSTOR Archive Style</title>
     <style>
+        /* --- JSTOR Aesthetic Base --- */
         body {
-            font-family: 'Georgia', serif;
-            line-height: 1.8;
-            background-color: #f4f4f2;
-            color: #333;
-            margin: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.65;
+            background-color: #ffffff; /* Classic white page background */
+            color: #1a1a1a; /* Very dark grey text for high contrast */
+            margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
-        .chapter-container {
+
+        .archive-header {
             width: 100%;
-            max-width: 800px;
-            margin-top: 20px;
-        }
-        h1 {
-            color: #5D4037;
-            text-align: center;
-            border-bottom: 3px double #A1887F;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #795548;
-            margin-top: 20px;
+            background-color: #f7f7f7; /* Light grey banner for structure */
+            padding: 20px 0;
+            border-bottom: 1px solid #e0e0e0;
             margin-bottom: 30px;
+        }
+        
+        /* --- Content Container mimics the reading pane --- */
+        .article-content {
+            width: 100%;
+            max-width: 780px; /* Generous width for readability */
+            margin: 0 auto;
+            padding: 0 40px; /* Generous side padding/margins */
+        }
+
+        /* --- Headings --- */
+        h1 {
+            font-size: 1.8em;
+            color: #333333;
             text-align: center;
+            margin-bottom: 5px;
+            font-weight: normal;
         }
+
+        h2 {
+            font-size: 1.2em;
+            color: #5d5d5d;
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 40px;
+            font-weight: normal;
+        }
+        
+        /* --- Paragraph Styling for Archive Feel --- */
         .paragraph {
-            background-color: #ffffff; /* White background for the main content */
-            border: 1px solid #BCAAA4; /* Thin border around the paragraph box */
-            border-left: 8px solid #A1887F; /* Thick, distinguishing left border */
-            padding: 15px;
-            margin-bottom: 25px; /* Large margin for clear separation */
-            border-radius: 6px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05); /* Slight shadow for depth */
-            transition: transform 0.2s; /* Hover effect for extra clarity */
+            margin-bottom: 1.2em; /* Good vertical spacing */
+            padding: 5px 0;
+            border-bottom: 1px dashed #e0e0e0; /* Light dashed line for subtle separation */
+            text-indent: 1.5em; /* Standard book/archive indentation */
         }
-        .paragraph:hover {
-            border-left-color: #5D4037;
-            transform: translateY(-2px);
-            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+
+        /* First paragraph typically does not have a text-indent in a new section */
+        .paragraph:first-of-type {
+            text-indent: 0;
         }
-        .paragraph::before {
-            content: "¶ ";
-            color: #A1887F;
-            font-weight: bold;
-            margin-right: 5px;
+        
+        /* Optional: Add a simple metadata line for authenticity */
+        .metadata {
+            font-size: 0.9em;
+            color: #888888;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 15px;
+            margin-top: 40px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <div class="chapter-container">
+    <div class="archive-header">
+        </div>
+    
+    <div class="article-content">
         <h1>Great Expectations</h1>
-        <h2>Chapter 1: The Churchyard Encounter (All Paragraphs)</h2>
+        <h2>Chapter I: Introduction and the Convict</h2>
 
         <div class="paragraph">
             My father's family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip. So, I called myself Pip, and came to be called Pip.
@@ -131,6 +151,10 @@
 
         <div class="paragraph">
             With that, he turned me upside down, and emptied my pockets. Then he set me down, and I ran home as fast as I could lay my legs to the ground.
+        </div>
+
+        <div class="metadata">
+            Dickens, Charles. *Great Expectations*. Chapman and Hall, 1861. Full Text Archive.
         </div>
     </div>
 
