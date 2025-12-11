@@ -2,6 +2,8 @@
 
 > **A web-based reader for Charles Dickens' *Great Expectations* featuring a minimalist, academic layout inspired by the JSTOR & Full Text Archive.**
 
+[Books](https://lukeclarksf.github.io/books)
+
 ## ✨ Features
 
 * **JSTOR Aesthetic:** Clean, high-contrast, serif-based design for focused reading.
