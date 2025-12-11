@@ -2,159 +2,458 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Great Expectations: Chapter 1 - JSTOR Archive Style</title>
+    <title>Great Expectations: Chapter Summaries - JSTOR Style</title>
     <style>
         /* --- JSTOR Aesthetic Base --- */
         body {
             font-family: Georgia, 'Times New Roman', Times, serif;
-            line-height: 1.65;
-            background-color: #ffffff; /* Classic white page background */
-            color: #1a1a1a; /* Very dark grey text for high contrast */
+            font-size: 1.0em; 
+            line-height: 1.6;
+            background-color: #ffffff; 
+            color: #1a1a1a; 
             margin: 0;
-            padding: 0;
+            padding: 40px 0; 
         }
 
-        .archive-header {
-            width: 100%;
-            background-color: #f7f7f7; /* Light grey banner for structure */
-            padding: 20px 0;
-            border-bottom: 1px solid #e0e0e0;
-            margin-bottom: 30px;
-        }
-        
-        /* --- Content Container mimics the reading pane --- */
+        /* --- Content Container --- */
         .article-content {
             width: 100%;
-            max-width: 780px; /* Generous width for readability */
+            max-width: 900px;
             margin: 0 auto;
-            padding: 0 40px; /* Generous side padding/margins */
+            padding: 0 40px; 
         }
 
         /* --- Headings --- */
         h1 {
-            font-size: 1.8em;
-            color: #333333;
+            font-size: 2.2em;
+            color: #1a1a1a;
             text-align: center;
             margin-bottom: 5px;
-            font-weight: normal;
+            font-weight: bold;
         }
 
         h2 {
-            font-size: 1.2em;
-            color: #5d5d5d;
-            text-align: center;
-            margin-top: 5px;
-            margin-bottom: 40px;
-            font-weight: normal;
-        }
-        
-        /* --- Paragraph Styling for Archive Feel --- */
-        .paragraph {
-            margin-bottom: 1.2em; /* Good vertical spacing */
-            padding: 5px 0;
-            border-bottom: 1px dashed #e0e0e0; /* Light dashed line for subtle separation */
-            text-indent: 1.5em; /* Standard book/archive indentation */
+            font-size: 1.1em;
+            letter-spacing: 0.05em;
+            color: #0077b6; /* JSTOR-like blue for section headers */
+            text-align: left;
+            text-transform: uppercase; 
+            margin-top: 40px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #c0c0c0;
+            margin-bottom: 25px;
+            font-weight: bold;
         }
 
-        /* First paragraph typically does not have a text-indent in a new section */
-        .paragraph:first-of-type {
-            text-indent: 0;
+        /* --- Table Styling for Archive Feel --- */
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        .summary-table th {
+            font-size: 0.9em;
+            background-color: #f7f7f7;
+            color: #333333;
+            text-align: left;
+            padding: 10px;
+            border-bottom: 2px solid #e0e0e0;
+            text-transform: uppercase;
+        }
+
+        .summary-table td {
+            padding: 12px 10px;
+            border-bottom: 1px dotted #e0e0e0;
+            vertical-align: top;
         }
         
-        /* Optional: Add a simple metadata line for authenticity */
+        /* Highlight the whole row slightly on hover */
+        .summary-table tr:hover td {
+            background-color: #fafafa;
+        }
+
+        .chapter-num {
+            width: 60px;
+            text-align: center; /* Center the badge */
+        }
+        
+        /* --- ENHANCED CLICKABLE CHAPTER STYLING (The Key Change) --- */
+        .chapter-num a {
+             /* Make the link behave like a button/badge */
+             display: inline-block;
+             min-width: 25px;
+             text-align: center;
+             
+             background-color: #eef7ff; /* Very light blue background */
+             color: #0077b6; /* JSTOR blue for the text */
+             font-weight: bold;
+             text-decoration: none;
+             
+             border: 1px solid #cce0f0;
+             padding: 3px 6px;
+             border-radius: 2px;
+             transition: background-color 0.2s, box-shadow 0.2s;
+        }
+
+        .chapter-num a:hover {
+            background-color: #d8e5f2; /* Darker blue on hover */
+            text-decoration: none; /* Keep it clean, no underline */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle 3D lift */
+        }
+        
         .metadata {
-            font-size: 0.9em;
+            font-size: 0.85em;
             color: #888888;
             border-top: 1px solid #e0e0e0;
-            padding-top: 15px;
-            margin-top: 40px;
+            padding-top: 25px;
+            margin-top: 50px;
             text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <div class="archive-header">
-        </div>
-    
     <div class="article-content">
         <h1>Great Expectations</h1>
-        <h2>Chapter I: Introduction and the Convict</h2>
+        
+        <h2>Part I: Childhood and the Discovery of Hope (Chapters 1–19)</h2>
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th class="chapter-num">Ch.</th>
+                    <th>Summary</th>
+                    <th>Key Events / Characters</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch1.html">I</a></td>
+                    <td>Pip, a young orphan, encounters an escaped convict in the marsh churchyard and is forced to help him steal food and a file.</td>
+                    <td>First meeting with the Convict (Magwitch). Introduction to Pip, Joe, and Mrs. Joe.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch2.html">II</a></td>
+                    <td>Pip steals the required items from his sister's house, feeling immense guilt. He nearly gets caught when his sister prepares for the Christmas dinner guests.</td>
+                    <td>Pip's theft of the "wittles" and the file. Introduction of Mr. Wopsle and Uncle Pumblechook.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch3.html">III</a></td>
+                    <td>Pip delivers the supplies. He briefly encounters a second, wounded convict who flees. Soldiers arrive at Joe's house, asking him to mend shackles. The convicts are recaptured.</td>
+                    <td>The two convicts (Magwitch and Compeyson) are recaptured after a fight. Magwitch covers for Pip.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch4.html">IV</a></td>
+                    <td>Mrs. Joe discovers the theft of the pork pie during Christmas dinner, but the moment is interrupted by the arrival of the soldiers.</td>
+                    <td>The near discovery of Pip's crime.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch5.html">V</a></td>
+                    <td>The soldiers take Joe to mend the handcuffs. Pip observes the convicts' capture.</td>
+                    <td>The recapture and Magwitch's noble gesture.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch6.html">VI</a></td>
+                    <td>Pip feels deeply burdened by his secret concerning the file and the food. He keeps the truth hidden from Joe, but his conscience is troubled.</td>
+                    <td>Pip's guilt and the start of his secrecy.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch7.html">VII</a></td>
+                    <td>Pip is sent to Miss Havisham's house to "play." He meets Estella, who treats him with disdain and calls him "common."</td>
+                    <td>First visit to Satis House. Pip's instant shame and the birth of his social ambition.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch8.html">VIII</a></td>
+                    <td>Pip returns from Satis House and lies about his experience, leading to Joe confiding in him. He decides to seek education to become less "common."</td>
+                    <td>Pip lies to Mrs. Joe and Pumblechook. Joe's kindness is highlighted.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch9.html">IX</a></td>
+                    <td>Joe visits Miss Havisham to discuss Pip's future. Joe's awkward behavior in a formal setting further embarrasses Pip.</td>
+                    <td>Pip's increasing awareness of social class and Joe's "commonness."</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch10.html">X</a></td>
+                    <td>Miss Havisham pays Joe 25 guineas, confirming that Pip is to be officially apprenticed to the blacksmith trade. Pip's dreams are crushed.</td>
+                    <td>Pip starts his apprenticeship with Joe.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch11.html">XI</a></td>
+                    <td>Pip encounters a mysterious man (later identified as Mr. Jaggers) at Satis House. Joe's journeyman, Dolge Orlick, argues with Mrs. Joe.</td>
+                    <td>Pip meets Jaggers. Growing antagonism between Mrs. Joe and Orlick.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch12.html">XII</a></td>
+                    <td>Mrs. Joe is brutally attacked and suffers permanent brain damage. Pip suspects Orlick.</td>
+                    <td>Mrs. Joe's attack. Introduction of Orlick as a sinister figure.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch13.html">XIII</a></td>
+                    <td>Pip spends a happy period helping Biddy care for Mrs. Joe and improve her education, finding comfort and satisfaction in the forge life.</td>
+                    <td>Biddy's influence. The family adapts to Mrs. Joe's injury.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch14.html">XIV</a></td>
+                    <td>Pip encounters the strange man from Miss Havisham's house again, who gives him money. Pip recognizes him as the man with the large head and strong hands.</td>
+                    <td>The introduction of Jaggers's unique mannerisms.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch15.html">XV</a></td>
+                    <td>Pip receives news that he has inherited a great fortune from an anonymous benefactor and must leave immediately for London to become a gentleman.</td>
+                    <td>**The Turning Point:** The Great Expectation is announced.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch16.html">XVI</a></td>
+                    <td>Pip says emotional goodbyes to Joe and Biddy, feeling shame over their simple ways but excited about his new life.</td>
+                    <td>Pip’s snobbery begins.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch17.html">XVII</a></td>
+                    <td>Pip visits Miss Havisham, believing she is his benefactor. She encourages his belief and tells him Estella will soon return from school.</td>
+                    <td>Miss Havisham reinforces Pip's misconception.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch18.html">XVIII</a></td>
+                    <td>Pip receives his new clothes and prepares for his departure, treating the townspeople, especially Pumblechook, with contempt.</td>
+                    <td>Pip’s final days in the village.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch19.html">XIX</a></td>
+                    <td>Pip leaves his home and begins his journey to London, reflecting on the changes and hopes for his future.</td>
+                    <td>The transition from Pip's childhood to his adult life.</td>
+                </tr>
+            </tbody>
+        </table>
 
-        <div class="paragraph">
-            My father's family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip. So, I called myself Pip, and came to be called Pip.
-        </div>
+        <h2>Part II: The Gentleman's Life and Revelation (Chapters 20–39)</h2>
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th class="chapter-num">Ch.</th>
+                    <th>Summary</th>
+                    <th>Key Events / Characters</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch20.html">XX</a></td>
+                    <td>Pip arrives in London and meets Mr. Jaggers, his guardian. He sees Jaggers's office and observes his cold, intimidating personality.</td>
+                    <td>Pip begins his life in London.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch21.html">XXI</a></td>
+                    <td>Pip meets his roommate, **Herbert Pocket**, at Barnard's Inn. Herbert is the pale young gentleman Pip fought years ago.</td>
+                    <td>Pip moves into Barnard's Inn and gains a kind friend.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch22.html">XXII</a></td>
+                    <td>Herbert reveals Miss Havisham's tragic history: she was betrayed by her fiancé (Compeyson) on her wedding day. He nicknames Pip "Handel."</td>
+                    <td>Pip learns Miss Havisham's backstory.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch23.html">XXIII</a></td>
+                    <td>Pip meets Matthew Pocket, Herbert’s father and his tutor, and the other strange students.</td>
+                    <td>Introduction of the Pocket family at Hammersmith.</td>
+                </tr>
+                 <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch24.html">XXIV</a></td>
+                    <td>Pip attempts to describe Jaggers's unusual house to Herbert.</td>
+                    <td>Details of Jaggers's intimidating home life.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch25.html">XXV</a></td>
+                    <td>Pip visits Wemmick at Walworth and meets the Aged Parent.</td>
+                    <td>Introduction of Wemmick's dual life (private/public).</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch26.html">XXVI</a></td>
+                    <td>Pip attends a dinner at Jaggers's house and observes the lawyer's control over his housekeeper, Molly.</td>
+                    <td>Molly's strange history is hinted at.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch27.html">XXVII</a></td>
+                    <td>Pip is surprised by a visit from Joe, whom he treats poorly out of social embarrassment. Joe delivers a message from Estella.</td>
+                    <td>Pip's snobbery reaches its peak as he shames Joe.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch28.html">XXVIII</a></td>
+                    <td>Pip travels back to his hometown. He encounters the convict from the pub who gave him money many years ago.</td>
+                    <td>Pip's return trip. He learns Orlick is now a gate-keeper at Satis House.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch29.html">XXIX</a></td>
+                    <td>Pip sees Estella again, and she informs him she has no heart and cannot love him, yet Pip remains obsessed.</td>
+                    <td>Pip and Estella meet again. She warns him of her coldness.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch30.html">XXX</a></td>
+                    <td>Pip and Herbert visit the theatre where Mr. Wopsle is performing. Pip dislikes the performance and finds the company common.</td>
+                    <td>Pip's continued snobbery.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch31.html">XXXI</a></td>
+                    <td>Pip tries to prevent Orlick from working at Satis House, believing he is dangerous.</td>
+                    <td>Pip gets Orlick fired.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch32.html">XXXII</a></td>
+                    <td>Estella arrives in London, and Pip escorts her.</td>
+                    <td>Estella begins her life in London high society.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch33.html">XXXIII</a></td>
+                    <td>Estella continues to caution Pip that she is incapable of love, even as she uses men to fuel her power.</td>
+                    <td>Estella's psychological cruelty is evident.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch34.html">XXXIV</a></td>
+                    <td>Pip and Herbert rack up debts as they live extravagant and wasteful lives.</td>
+                    <td>The financial recklessness of Pip's "Expectation."</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch35.html">XXXV</a></td>
+                    <td>Mrs. Joe dies. Pip returns home for the funeral, reflecting on his shame and his poor treatment of Joe and Biddy.</td>
+                    <td>Mrs. Joe's death. Pip's remorse.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch36.html">XXXVI</a></td>
+                    <td>Pip turns 21 and officially gains control of his money through Jaggers, but his benefactor remains anonymous.</td>
+                    <td>Pip reaches his majority.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch37.html">XXXVII</a></td>
+                    <td>Pip uses his newfound money to secretly establish Herbert in business, arranging for him to be an anonymous partner.</td>
+                    <td>Pip performs a truly unselfish act.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch38.html">XXXVIII</a></td>
+                    <td>Estella marries Bentley Drummle, a wealthy but brutish suitor, shocking and devastating Pip.</td>
+                    <td>Estella's marriage. Miss Havisham gloats in Estella's ability to inflict pain.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch39.html">XXXIX</a></td>
+                    <td>On a stormy night, Pip's anonymous benefactor reveals himself: it is **Abel Magwitch**, the convict Pip helped in the churchyard. **The Great Discovery.**</td>
+                    <td>Pip's dreams are shattered as he learns the true, criminal source of his wealth.</td>
+                </tr>
+            </tbody>
+        </table>
 
-        <div class="paragraph">
-            I give Pirrip as my father's family name, on the authority of his tombstone and my sister,—Mrs. Joe Gargery, who married the blacksmith. As I never saw my father or my mother, and never saw any likeness of either of them (for their days were long before the days of photographs), my first fancies regarding what they were like, were unreasonably derived from their tombstones. The shape of the letters on my father's, gave me an odd idea that he was a square, stout, dark man, with curly black hair. From the tombstone of his wife, my mother, I drew the notion that she was a freckled woman with a sickly face, and that to want to marry her and to be married to her was a great deal more than I should ever have thought of. The five little stone tablets, each about a foot and a half long, which were sacred to the memory of five little brothers of mine—who gave up trying to get a living, exceedingly early in that universal struggle—gave me the idea that life was all a blunder, and that there was nothing to be done but to come back and try all over again.
-        </div>
+        <h2>Part III: Disaster and Redemption (Chapters 40–59)</h2>
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th class="chapter-num">Ch.</th>
+                    <th>Summary</th>
+                    <th>Key Events / Characters</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch40.html">XL</a></td>
+                    <td>Magwitch recounts his life story to Pip, including his association with the master criminal, **Compeyson**. Pip decides he cannot accept Magwitch's money.</td>
+                    <td>Magwitch's history is revealed.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch41.html">XLI</a></td>
+                    <td>Pip shares the secret with Herbert. They realize Magwitch is in danger from Compeyson and the police, and they devise a plan to smuggle him out of the country.</td>
+                    <td>Pip and Herbert begin their loyal mission to save Magwitch.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch42.html">XLII</a></td>
+                    <td>Magwitch reveals that Compeyson was Miss Havisham's cruel fiancé.</td>
+                    <td>The two major plotlines (the convict and Miss Havisham) are finally connected.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch43.html">XLIII</a></td>
+                    <td>Pip confronts Bentley Drummle, who boasts about his control over Estella.</td>
+                    <td>Pip's final painful encounter with Drummle.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch44.html">XLIV</a></td>
+                    <td>Pip realizes he has mistaken Miss Havisham for his benefactor and confronts her. He begs her to help Herbert financially.</td>
+                    <td>Pip's disillusionment is complete.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch45.html">XLV</a></td>
+                    <td>Miss Havisham, remorseful, agrees to give Herbert the money. Pip sees a vision of her burning.</td>
+                    <td>Miss Havisham's guilt and Pip's strange premonition.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch46.html">XLVI</a></td>
+                    <td>Pip returns to Satis House and finds Miss Havisham badly burned, having accidentally set herself on fire. Pip saves her, burning himself severely.</td>
+                    <td>Miss Havisham's tragic end. Pip shows heroic loyalty.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch47.html">XLVII</a></td>
+                    <td>Jaggers's housekeeper, Molly, is identified as Estella's mother and Magwitch is her father.</td>
+                    <td>**The Final Revelation**: Jaggers's secrets are exposed.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch48.html">XLVIII</a></td>
+                    <td>Pip and Herbert plot the escape plan. Pip sees Orlick lurking nearby.</td>
+                    <td>The danger to Magwitch increases.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch49.html">XLIX</a></td>
+                    <td>Pip learns that Magwitch's daughter, whom he believed dead, is Estella.</td>
+                    <td>The climax of the mystery is revealed.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch50.html">L</a></td>
+                    <td>Pip receives a mysterious note to meet someone.</td>
+                    <td>The setup for a confrontation.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch51.html">LI</a></td>
+                    <td>Pip is lured to the sluice-house by a message from Orlick, who attempts to murder him. Pip is saved by Herbert and Startop.</td>
+                    <td>Orlick's true nature is confirmed, and he is captured.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch52.html">LII</a></td>
+                    <td>Pip and Herbert attempt to row Magwitch to a steamer ship. They are interrupted by a pursuing boat containing Compeyson and the police.</td>
+                    <td>The attempted escape is foiled.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch53.html">LIII</a></td>
+                    <td>Magwitch and Compeyson struggle in the water. Compeyson drowns, and Magwitch is captured, badly injured.</td>
+                    <td>Magwitch is captured, but Compeyson is dead.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch54.html">LIV</a></td>
+                    <td>Magwitch is tried and sentenced to death. Pip stays by his side, showing immense loyalty and love.</td>
+                    <td>Magwitch's final, honorable trial.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch55.html">LV</a></td>
+                    <td>Magwitch, badly injured and sentenced to death, dies peacefully after Pip tells him that his daughter, Estella, is alive. Pip falls gravely ill.</td>
+                    <td>Magwitch's death. Pip's emotional transformation is complete.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch56.html">LVI</a></td>
+                    <td>Pip is arrested for debt. Joe comes to London, nurses Pip back to health, and pays off his debts.</td>
+                    <td>Joe's ultimate goodness and Pip's final humbling.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch57.html">LVII</a></td>
+                    <td>Once Pip is recovered, Joe quietly returns home, leaving Pip a note that signifies their friendship is restored.</td>
+                    <td>Restoration of Pip and Joe's relationship.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch58.html">LVIII</a></td>
+                    <td>Pip returns to the forge to ask Biddy to marry him, only to find that she and Joe have married each other. Pip gives them his blessing and leaves for Cairo to work with Herbert.</td>
+                    <td>Joe and Biddy's wedding. Pip accepts his new destiny.</td>
+                </tr>
+                <tr>
+                    <td class="chapter-num"><a href="greatexpectations_ch59.html">LIX</a></td>
+                    <td>**The Final Chapter (Revised Ending):** Pip returns to Satis House years later and finds Estella, now a widow, walking in the garden. They part, implying they will not do so again.</td>
+                    <td>Pip and Estella meet again, suggesting a future based on shared sorrow and wisdom.</td>
+                </tr>
+            </tbody>
+        </table>
 
-        <div class="paragraph">
-            I am a village boy, and I was at the village churchyard. The village lay on the flat, dreary, water-side country, some twenty miles from the sea, and some miles down the river. The river was tidal and full of mud. The marshes were just in front of the church, and the churchyard was all flat, and was cut up into mounds, where the dead lay, and where the living walked. The river was a tidal river, and the land was low and muddy, and the tide was out.
-        </div>
-
-        <div class="paragraph">
-            The day was beginning to be dark, and the low church was a little more indistinct than the great flat wilderness of low-lying marshes and low-lying sea. There was a low, heavy sky, a low, heavy fog, and a low, heavy sound of the distant sea. The flat country and the low, heavy sky, seemed to be all in a tremble. The great flat wilderness was cut up by dykes and mounds; it was a dreary place, a place of ditches and rank grass, and of the only thing that broke the level of the flat land—the long, straight, black, and ominous line of the gibbet.
-        </div>
-
-        <div class="paragraph">
-            At such a time, and in such a place, I am telling you that I am quite alone, and I am quite alone.
-        </div>
-
-        <div class="paragraph">
-            “Hold your noise!” cried a terrible voice, as a man started up from among the graves at the side of the church porch. “Keep still, you little devil, or I’ll cut your throat!”
-        </div>
-
-        <div class="paragraph">
-            A fearful man, all in coarse grey, with a great iron on his leg. A man with no hat, and with broken shoes, and with an old rag tied round his head. A man who had been soaked in water, and smothered in mud, and lamed by stones, and cut by flints, and stung by nettles, and torn by briars; who limped, and shivered, and glared, and growled; and whose teeth chattered in his head as he seized me by the chin.
-        </div>
-
-        <div class="paragraph">
-            “Oh! Don't cut my throat, sir,” I pleaded, in terror. “Pray don't do it, sir.”
-        </div>
-
-        <div class="paragraph">
-            “Tell us your name!” said the man. “Quick!”
-        </div>
-
-        <div class="paragraph">
-            “Pip, sir.”
-        </div>
-
-        <div class="paragraph">
-            “Once more,” said the man, staring at me. “Give it mouth!”
-        </div>
-
-        <div class="paragraph">
-            “Pip, sir.”
-        </div>
-
-        <div class="paragraph">
-            “Show us where you live,” said the man. “Pint out the place!”
-        </div>
-
-        <div class="paragraph">
-            I pointed to where our village lay, on the flat in the distance.
-        </div>
-
-        <div class="paragraph">
-            “I took you for a booby, didn’t I?” said the man, looking at me with a most dreadful air. “Well, I'll take you for another—for a cunning one. You bring me to-morrow morning early, that file and them wittles. You bring the lot to me, at that old battery over yonder. Say no word of it, bring the lot, and you shall live. Say a word of it, and your heart and liver shall be cut out, and I'll bring 'em to you, and they'll be cooked and eaten! Now, what do you say?”
-        </div>
-
-        <div class="paragraph">
-            I could do nothing but answer, “Yes, sir.”
-        </div>
-
-        <div class="paragraph">
-            “Blesh you, now!” said the man. “You do it, and you shall have me for your friend. Don't you do it, and you shall have me for your enemy. I ain't alone, mind you. There's a young woman hid with me, as has been my companion, and she'd tear you limb from limb if she was let loose on you. She's a very wicked young woman, she is. She'd be as sharp as a razor, and as wicked as a devil. Now, look here. I'm going to turn you upside down, and let you go. You'll soon see your home. Be off!”
-        </div>
-
-        <div class="paragraph">
-            With that, he turned me upside down, and emptied my pockets. Then he set me down, and I ran home as fast as I could lay my legs to the ground.
-        </div>
 
         <div class="metadata">
-            Dickens, Charles. *Great Expectations*. Chapman and Hall, 1861. Full Text Archive.
+            Source: *Great Expectations* by Charles Dickens. Summarized for the Full Text Archive.
         </div>
     </div>
 
