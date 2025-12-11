@@ -2,7 +2,7 @@
 
 > **A web-based reader for Charles Dickens' *Great Expectations* featuring a minimalist, academic layout inspired by the JSTOR & Full Text Archive.**
 
-[Books](lukeclarksf.github.io/books)
+[Books](https://lukeclarksf.github.io/books)
 
 ## ✨ Features
 
