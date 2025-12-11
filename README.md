@@ -18,7 +18,3 @@ Simply open the HTML files in your browser to view the chapters.
 
 * HTML5
 * CSS3 (JSTOR-inspired styling)
-
-## 📄 License
-
-[MIT License](LICENSE)
