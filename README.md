@@ -1,6 +1,6 @@
 # 📖 Dickens Digital Archive: Great Expectations
 
-> **A web-based reader for Charles Dickens' *Great Expectations* featuring a minimalist, academic layout inspired by the JSTOR Full Text Archive.**
+> **A web-based reader for Charles Dickens' *Great Expectations* featuring a minimalist, academic layout inspired by the JSTOR & Full Text Archive.**
 
 ## ✨ Features
 
